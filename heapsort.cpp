@@ -9,7 +9,7 @@ void heapify(int* a, int size, int root)
 	int max = root;
 	if (2 * root + 1 < size && a[root] < a[2 * root + 1])
 		max = 2 * root + 1;
-	if (2 * root + 2 < size && a[root] < a[2 * root + 2] && a[2 * root + 1] < a[2 * root + 2])
+	if (2 * root + 2 < size && a[root] < a[2 * root + 2])
 		max = 2 * root + 2;
 	if (max != root) {
 		swap(a[root], a[max]);
